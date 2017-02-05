@@ -1,5 +1,10 @@
 ####  def GetExtent and def ReprojectCoord taken from here
 ####http://gis.stackexchange.com/questions/57834/how-to-get-raster-corner-coordinates-using-python-gdal-bindings
+## Also training points from here
+## ## code adapted from below
+### http://gis.stackexchange.com/questions/46893/getting-pixel-value-of-gdal-raster-under-ogr-point-without-numpy
+## And if you want just extracting values from sat data and plotting in 3D https://github.com/acgeospatial/extract_values_to_points 
+
 
 from osgeo import gdal,ogr,osr
 import random
