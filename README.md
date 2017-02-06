@@ -35,14 +35,18 @@ Simple(?)!
 
 Getting the boundary from the image(s) is very nicely done here. This gives 2 nice functions. I will use the ‘extract the values all bands’ function from my previous tutorial, so all that is left to do is to randomly generate the points within this boundary, push it into scikit-learn to generate an unsupervised classification and plot it (matplotlib).
 
+![alt tag](http://www.acgeospatial.co.uk/wp-content/uploads/2017/02/image1.png)
+
 My image extents are defined at geo_ext (min x and max x, min y and max y) I am generating 10000 random points, then writing them out to a csv and creating 2 lists with the X (mx) and Y (my) coordinates. After that I call the training point function like this
 
-![alt tag](http://www.acgeospatial.co.uk/wp-content/uploads/2017/02/image1.png)
+![alt tag](http://www.acgeospatial.co.uk/wp-content/uploads/2017/02/image2.png)
 
 
 You can call it as many times as you need (depending on what bands you want to use)
 
 I call it 6 times for bands 2,3,4,5,6&7 and then I write it out to a csv
+
+![alt tag](http://www.acgeospatial.co.uk/wp-content/uploads/2017/02/image3.png)
 
 Load this textfile into a numpy array, and classify it (3lines!), 5 clusters are specified (n_cluster=5), but feel free to change!
 
