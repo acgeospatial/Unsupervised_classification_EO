@@ -44,13 +44,21 @@ My image extents are defined at geo_ext (min x and max x, min y and max y) I am 
 
 You can call it as many times as you need (depending on what bands you want to use)
 
+![alt tag](http://www.acgeospatial.co.uk/wp-content/uploads/2017/02/image3.png)
+
 I call it 6 times for bands 2,3,4,5,6&7 and then I write it out to a csv
 
-![alt tag](http://www.acgeospatial.co.uk/wp-content/uploads/2017/02/image3.png)
+![alt tag](http://www.acgeospatial.co.uk/wp-content/uploads/2017/02/image4.png)
 
 Load this textfile into a numpy array, and classify it (3lines!), 5 clusters are specified (n_cluster=5), but feel free to change!
 
+![alt tag](http://www.acgeospatial.co.uk/wp-content/uploads/2017/02/image5.png)
+
 Now all that is left to do is plot it. y_pred is the predicted data. Below I am plotting the bands values and colouring the scatter based on the group.
+
+![alt tag](http://www.acgeospatial.co.uk/wp-content/uploads/2017/02/image6.png)
+
+![alt tag](http://www.acgeospatial.co.uk/wp-content/uploads/2017/02/image7.png)
 
 And there you go. Unsupervised classification of (points from) satellite data.
 
